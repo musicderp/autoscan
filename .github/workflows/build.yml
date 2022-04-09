@@ -117,8 +117,8 @@ jobs:
           pull: true
           push: true
           tags: |
-            cloudb0x/autoscan:${{ steps.releasetag.outputs.tag }}
-            cloudb0x/autoscan:latest
+            musicderp/autoscan:${{ steps.releasetag.outputs.tag }}
+            musicderp/autoscan:latest
 
       # docker build (branch)
       - name: branch name
@@ -146,7 +146,7 @@ jobs:
           pull: true
           push: true
           tags: |
-            cloudb0x/autoscan:${{ steps.dockertag.outputs.replaced }}
+            musicderp/autoscan:${{ steps.dockertag.outputs.replaced }}
 
       # cleanup
       - name: cleanup
